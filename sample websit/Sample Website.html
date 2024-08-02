@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            // JavaScript code to play the video automatically
+            document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('myVideo');
+            video.play();
+            video.pause();
+            video.stop();
+         });
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="content">    
+
+            </section>
+            <div class="video-container">
+                <video id="myVideo" width="640" height="360" controls>
+                    <source src="https://youtu.be/8SsjV1ZZnyM?list=PLh6Yk2rpZu2IC_gK6jWE-qtq8sCgPhRwW" type="video/mp4">
+                    <source src="https://youtu.be/cS0TG1iksLM" type="video/webm">
+                    <source src="your-video-file.ogg" type="video/ogg">
+                    <!-- Provide alternative sources for different formats if necessary -->
+                    <!-- <source src="video.webm" type="video/webm"> -->
+                    <!-- <source src="video.ogv" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </main>
+        <footer>
+            
+            <p>&copy; 2024 Sample Website. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

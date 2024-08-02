@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drag and Drop Events</title>
+  <style>
+    #dropzone {
+      width: 300px;
+      height: 150px;
+      border: 2px dashed #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="dragme" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', 'Hello Drag!');">
+    Drag Me
+  </div>
+
+  <div id="dropzone" ondragover="event.preventDefault();" ondrop="handleDrop(event);">
+    Drop Here
+  </div>
+
+  <script>
+    function handleDrop(event) {
+      event.preventDefault();
+      var data = event.dataTransfer.getData('text/plain');
+      event.target.textContent = 'Dropped: ' + data;
+    }
+  </script>
+</body>
+</html>

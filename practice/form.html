@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>form Demo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            display:inline;
+            justify-content: center;
+            align-items: center;
+            background-color: azure;
+        }
+        fieldset{
+            width: 450px;
+            border: 1px,solid gold;
+            padding: 20px;
+            border: 2px solid green;
+        }
+        legend{
+            background-color: blue;
+            color: antiquewhite;
+            padding: 5px 20px;
+            font-weight: bold;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <fieldset>
+        <legend>register form</legend>
+    <form action="response.html">
+        <label>Enter</label>
+        Name: <input type="text" placeholder="Enter Name" required><br><br>
+        <label>Enter </label>
+        Place: <input type="text" placeholder="Enter Place" required><br><br>
+        <label>Enter</label>
+        Password:<input type="password"placeholder="Enter Password" minlength="6" maxlength="12" required><br><br>
+        <label>Enter Conform</label>
+        Password:<input type="password"placeholder="Conformpassword" minlength="6" maxlength="12" required><br><br>
+        <label>Enter </label>
+        Email:<input type="email" placeholder="Enter Email" required><br><br>
+        <select>
+            <option>English</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+        </select>
+        <input type="submit">
+        <input type="button" value="clickMe">
+        <input type="Reset"><br><br>
+        <input type="color"><br><br>
+        Gender: 
+        Female <input type="radio" name="gender">
+        Male<input type="radio" name="gender"><br><br>
+        Languages known:
+        English<input type="checkbox">
+        Telugu<input type="checkbox">
+        Hindi<input type="checkbox"><br>
+        <input type="range"><br><br>
+        <input type="date"><br><br>
+        <input type="file"><br><br>
+    </fieldset><br><br></form>
+        <input type="search"><br><br>
+        <input type="time"><br><br>
+        <input type="month"><br><br>
+        <input type="datetime-local"><br><br>
+        <input type="week"><br><br>
+        <input type="url"><br><br>
+        <textarea cols="22" rows="3" name="address">
+            dffhgkkjfhfkjlkkgjrfttklyjyrfffffffkjh,kghg,gmfhffhgfhghhhffjgjhghjhfhfghjfdfghfhdhdh
+        </textarea><br><br>
+    </form>
+</body>
+</html>

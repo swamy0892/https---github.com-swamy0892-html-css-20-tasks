@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nested Tables Example</title>
+<style>
+        body {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border: 2px solid green;
+        }
+        table table {
+            border: 2px solid green;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+
+<h1 style="color: green;">GeeksforGeeks</h1>
+<h2 style="color: black;">Nested Table</h2>
+<table border="2">
+    <tr>
+        <td>Main table row1,column1</td>
+        <td>Main table column2
+            <table border="2">
+                <tr>
+                    <td>Inner table row1 column1</td>
+                    <td>Inner table row1 column2</td>
+                </tr>
+                <tr>
+                    <td>Inner Table row2, column1</td>
+                    <td>Inner Table row2, column2</td>
+                </tr>
+                <tr>
+                    <td>Inner Table row3, column1</td>
+                    <td>Inner Table row3, column2</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Main table row2, column1</td>
+        <td>Main table row2, column2</td>
+    </tr>
+</table>
+
+</body>
+</html>

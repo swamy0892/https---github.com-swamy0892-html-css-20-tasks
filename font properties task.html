@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Font Properties</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #p1{
+            font-size: 2em;
+            color: greenyellow;
+            background-color: hsla(0, 89%,0%,1.0);
+            margin: 10px;
+        }
+        #p2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            font-variant: small-caps;
+            font-stretch: condensed;
+            margin: -15px;
+            margin-left: 200px;
+            color: blueviolet;
+        }
+        div{
+            background-color: rgb(255,0,0);
+            width: 25%;
+            height: 200px;
+            border: solid blue 1px;
+            margin-bottom: 10px;
+            image-rendering: inherit;
+            float: left;
+        }
+        #div2{
+            background-color: aqua;
+            border: solid goldenrod 1px;
+            margin-inline: 10px;
+        }
+        #div3{
+            background-color: blueviolet;
+            border: solid green 1px;
+            float: right;
+        }
+        #image-container {
+            width: 300px; /* Adjust width as needed */
+            height: 200px; /* Adjust height as needed */
+            border: 1px solid #ccc; /* Optional: Add a border */
+            padding: 10px; /* Optional: Add padding inside the div */
+            text-align: auto; /* Optional: Center-align the image */
+        }
+        #image-container img {
+            width: 100%; /* Ensures the image doesn't exceed the width of the div */
+            height: 80%; /* Ensures the image doesn't exceed the height of the div */
+        }
+        #div2{
+            width: 280px; 
+            height: 200px; 
+            border: 1px solid black; 
+            padding: 10px; 
+            text-align: auto;
+        }
+        #div2 img {
+            max-width: 200%;
+            height: 80%;
+        }
+        #div3{
+            width: 300px; 
+            height: 200px; 
+            border: 1px solid black; 
+            padding: 10px; 
+            text-align: auto;
+        }
+        #div3 img {
+            width: 100%;
+            height: 80%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p id="p1">HSL methods of applying colours</p>
+    <p id="p2">font Properties</p><br><br>
+    <div id="image-container">first section
+        <img src="https://thumbs.dreamstime.com/z/moody-sky-beach-8807726.jpg?w=576" alt="Description of image">
+    </div>
+
+    <div id="div2">second section
+        <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Description of image">
+    </div>
+
+    <div id="div3">third section
+        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Description of image">
+
+    </div>
+</body>
+</html>

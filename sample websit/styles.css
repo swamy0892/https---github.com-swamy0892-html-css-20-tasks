@@ -1,0 +1,121 @@
+/* Basic styling for the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    padding: 0 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.content {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    color: gray;
+}
+
+/* Styling for list */
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: black;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Styling for table */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: wheat;
+    border: 1px solid #ddd;
+}
+
+.content table th, .content table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content table th {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+}
